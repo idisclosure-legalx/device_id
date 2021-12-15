@@ -21,9 +21,9 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> initDeviceId() async {
-    String deviceid;
-    String imei;
-    String meid;
+    String? deviceid;
+    String? imei;
+    String? meid;
 
     deviceid = await DeviceId.getID;
     try {
